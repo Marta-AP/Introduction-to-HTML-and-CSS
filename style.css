@@ -1,0 +1,436 @@
+@font-face {
+  font-family: 'Madi';
+  src: url('fonts/Madi/ms-madi.woff2') format('woff2'),
+       url('fonts/Madi/ms-madi.woff') format('woff'),
+       url('fonts/Madi/ms-madi.ttf') format('truetype');
+  font-family: 'Dancingscript';
+  src: url('fonts/DancingScript/dancing-script.woff2'),
+       url('fonts/DancingScript/dancing-script.woff') format('woff'),
+       url('fonts/DancingScript/dancing-script.ttf') format('truetype')
+  font-family: 'Crimson';
+  src: url('fonts/Crimson/crimson.woff2') format('woff2'),
+       url('fonts/Crimson/crimson.woff') format('woff'),
+       url('fonts/Crimson/crimson.ttf') format('truetype');
+}
+
+body {
+  color: #000000;
+  background: rgb(183,216,252);
+  background: linear-gradient(90deg, rgba(183,216,252,1) 0%, rgba(65,84,190,1) 51%, rgba(0,34,104,1) 100%);
+  font-family: "Dancingscript", "Times New Roman";
+  font-size: 1rem;
+}
+
+/*Basic general style*/
+
+h1 {
+  text-align: center;
+  font-family: "Crimson", "Times New Roman";
+  font-size: 75px;
+  color: #000000;
+  text-shadow: 2px 2px white;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: right;
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+h4 {
+  text-align: center;
+
+}
+
+h5 {
+  text-align: center;
+}
+
+
+/*Navigation bar*/
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  top: 10px;
+  background-color: #141459;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  gap: 0.8rem;
+  padding: 0px;
+}
+
+nav ul li {
+  display: flex;
+  flex: 25%;
+  width: 25%;
+  padding: 0px 10px;
+}
+
+nav ul li a {
+  display: flex;
+  font-family: "Dancingscript", "Times New Roman";
+  font-size: 1.5rem;
+  color: #e1e1e1;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  display: flex;
+  background-color: #000000;
+}
+
+
+
+@media (min-width: 650px) {
+  nav ul li {
+    flex-direction: none;
+  }
+}
+
+/*Check breakpoints here!!!!!!*/
+
+@media (max-width: 650px) {
+  nav ul li {
+    flex-direction: column;
+  }
+}
+
+
+
+
+/*End navigation bar*/
+
+
+.sectitle {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: Crimson, "Times New Roman";
+  text-shadow: 5px 5px black;
+}
+
+footer {
+  position: relative;
+  width: 25%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.someimg a{
+  position: relative;
+  left: 42%;
+  align-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+a:link {
+  color: #0000d4;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover :not(img){
+  background-color: #000000;
+}
+
+
+/*End basic general style*/
+
+
+/*Index page - style*/
+
+header {
+  background-image: url("images/cover.jpg");
+  background-size: cover;
+  border-radius: 20px 100px;
+  width: 100%;
+  padding: 100px 0px 25px;
+}
+
+.quotation {
+  text-align: right;
+  position: relative;
+  top: 35px;
+  z-index: 1;
+  font-family: "Madi", "Times New Roman";
+  font-size: 30px;
+  color: white;
+  text-shadow: 10px 10px 3px black;
+}
+
+
+.allbip {
+  max-width: 900px;
+  font-size: 20px;
+  text-align: justify;
+  margin: auto;
+}
+
+
+.subtitle h2{
+  max-width: 900px;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+
+
+.citylist {
+  max-width: 70%;
+  position: relative;
+  padding-left: 20%;
+  text-align: left;
+}
+
+.citylist ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  list-style-type: none;
+}
+
+.citylist li {
+  flex: 0 0 30%;
+  text-align: left;
+}
+
+.citylist a {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #c1c1c1;
+  text-shadow: 1px 1px black;
+}
+
+
+/*End index page - style*/
+
+
+
+
+/* Page 1 (About me) - style*/
+
+.quoteNJ {
+  font-size: 20px;
+  text-align: justify;
+  margin: 0 auto;
+  width: 30em;
+  border-style: double;
+  border-color: white;
+  padding: 20px;
+}
+
+.mecontainer {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 450px;
+  width: 450px;
+}
+
+.textblock {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 0px 10px;
+  background-color: #000000;
+}
+
+.textblock h5 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: left;
+  line-height: 0%;
+}
+
+.textblock p {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  line-height: 5%;
+}
+
+/* End page 1 (About me) - style*/
+
+
+
+
+
+/* Page 2 (About the route) - style*/
+
+.maproute {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.mapsection {
+  font-size: 30px;
+}
+
+
+/* End page 2 (About the route) - style*/
+
+
+
+
+/* Page 3 (The places) - style*/
+
+/* Page 3 (The places) - pictures' style*/
+  
+.container {
+  position: relative;
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.container .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.container:hover .box {
+  transform: rotateY(25deg);
+}
+.container .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.container .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.container .box .imagebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .box .imagebox:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,#00ccff,#000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.container .box:hover .imagebox:before {
+  opacity: 1;
+}
+.container .box .imagebox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .box .imgcontent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.container .box .imgcontent h4 {
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.container .box:hover .imgcontent h4 {
+  transform: translateY(0px);
+}
+.container .box .imgcontent p {
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.container .box:hover .imgcontent p {
+  transform: translateY(0px);
+}
+
+/* End page 3 - pictures' style*/
+
+/* Page 3 - specific text style*/
+
+.udinaturen {
+  color: white;
+  text-decoration: none;
+}
+
+.cityinfo {
+  margin-bottom: 40px;
+}
+
+.cityp {
+  text-align: justify;
+  margin: 0 auto;
+  width: 30em;
+  border-style: double;
+  border-color: white;
+  padding: 20px;
+}
+
+/* End page 3 (The places) - text style*/
+
+/* End page 3 (The places) - style*/
